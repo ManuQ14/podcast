@@ -1,0 +1,106 @@
+//Topicos
+
+#topicos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width:768px){
+        height: 426px;
+    }
+}
+
+#titulo-topicos{
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    @media (min-width:768px){
+        font-size: 48px;
+        margin-left: 13.9%;
+        margin-top: 64px;
+        margin-bottom: 56px;
+    }
+}
+
+
+.iconos{
+    margin: auto;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 108px;
+    margin: auto;
+    @media(min-width: 768px){
+        margin-top: 0;
+        margin-bottom: 0;
+        margin: auto;
+        
+    }
+}
+
+
+h3{
+    font-family: $texto-titulos;
+    color: $color-texto-titulos;
+    font-weight: bold;
+    margin-left: 0;
+    margin-left: 16px;
+    font-size: 24px;
+    width: 288px;
+    height: 32px;
+    text-align: center;
+    margin-right: 16px;
+    margin-top: 0px;
+    margin-bottom: 36px;
+    margin: auto;
+    @media (min-width:768px){
+        width: 220px;
+        margin-top: 16px;
+    }
+}
+
+
+.compart{
+    height: 100%;
+    margin-bottom: 52px;
+    @media (min-width:768px){
+        height: 32px;
+    }
+    
+}
+
+.seginfo{
+    margin-bottom: 42px;
+}
+
+
+.trabajo-remoto{
+    @media(min-width: 768){
+        margin-top: 16px;
+        width: 220px;
+
+    }
+    
+}
+
+
+.contenedor-iconos{
+        display: flex;
+        flex-direction: column;
+    @media(min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        height: 130px;
+    }
+}
+
+
+#seccion-iconos{
+    @media (min-width:768px){
+        display: flex;
+        flex-direction: row;
+        margin-left: 13.9%;
+        margin-bottom: 0;
+        justify-content: center;
+        margin-left: 0;
+    }
+}

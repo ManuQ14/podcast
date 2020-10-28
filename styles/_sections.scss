@@ -1,0 +1,168 @@
+//Sección titulo y botón
+
+
+#titulo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+h1{
+    font-family: $texto-titulos;
+    font-size: $size-titulos;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-right: 25%;
+    margin-bottom: 16px;
+    @media(min-width: 768px){
+        width: 737px;
+        font-size: 64px;
+        color: $color-texto-titulos;
+        margin-left: 200px;
+        margin-right: 500px;
+        margin-bottom: 0;
+        margin-top: 120px;
+    }
+}
+
+h1::after{
+    content: ".";
+    color: $color-texto-titulos;
+    font-size: $size-titulos;
+    @media (min-width:768px){
+        color: $fondo-menu;
+        font-size: 64px;
+        
+
+    }
+}
+
+
+
+#info{
+    font-family: $texto-menu;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-texto-titulos;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 36px;
+    width: 288px;
+    @media(min-width:768px){
+        display: none;
+    }
+   
+}
+
+
+#info-desktop{
+    display: none;
+    @media (min-width:768px){
+        height: 48px;
+        width: 628px;
+        display: inline-block;
+        font-family: $texto-menu;
+        font-weight: 500;
+        color: $color-texto-titulos;
+        margin-left: 200px;
+        margin-bottom: 56px; 
+        width: 628px;
+        font-size: 16px;
+
+    }
+}
+
+button{
+    font-family: $texto-botones;
+    font-size: 16px;
+    font-weight: 900;
+    color: $color-texto-titulos;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: $color-botones;
+    border-style: none;
+    width: 288px;
+    height: 48px;
+    margin-bottom: 24px;
+    padding: 0;
+    margin: auto;
+    @media (min-width:768px){
+        width: 226px;
+        height: 56px;
+        margin-left: 200px;
+        margin-bottom: 5px;
+        margin-right: 1014px;
+        font-size: 18px;
+
+        
+
+        
+    }
+}
+
+
+button:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+
+
+
+//iframes
+
+
+iframe{
+    margin-bottom: 11px;
+    border: none;
+    background-color: transparent;
+    @media (min-width:768px){
+        width: 584px;
+        height: 232px;
+        margin-right: 72px;
+        margin-bottom: 72px;
+        
+    }
+ 
+}
+
+
+
+.frames-izquierdos{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    @media(min-width:768px){
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 584px;
+    }
+    
+}
+
+
+.iframe-final{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 48px;
+    @media (min-width:768px){
+        width: 584px;
+        height: 232px;
+        margin-right: 0;
+    }
+}
+
+
+.frames-derechos{
+    width: 100%;
+    border: none;
+    background-color: transparent;  
+    @media (min-width:768px){
+        margin-right: 0;
+        width: 584px;
+    }
+    
+}
+
+

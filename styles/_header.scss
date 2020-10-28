@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: 44px;
+    @media (min-width:768px){
+        height: 80px;
+        width: 100%;
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    
+
+
+    
+    
+}
+
+#logo{
+    height: 24px;
+    width: 24px;
+    margin-left: 16px;
+    margin-top: 10px;
+    @media (min-width:768px){
+        height: 36px;
+        width: 36px;
+        margin-left: 100px;
+        margin-top: 22px;
+    }
+}
+
+#menu{
+    display: none;
+}
+
+.abrir-menu{
+    width: 18px;
+    height: 12px;
+    margin-right: 16px;
+    margin-top: 10px;
+    @media(min-width:768px){
+        display: none;
+    }
+}
+
+
+.cerrar-menu{
+    display: none;
+    @media (min-width:768px){
+        display: none;
+    }
+}
+
+#menu:checked ~ .cerrar-menu{
+    display: flex;
+    width: 18px;
+    height: 12px;
+    margin-right: 16px;
+    margin-top: 10px;
+   
+}
+
+#menu:checked ~ .abrir-menu{
+    display: none;
+}
+
+.menu-desplegable{
+    display: flex;
+    padding-right: 100px;
+    list-style: none;
+    width: 100%;
+    display: none;
+    z-index: 1;
+    @media (min-width:768px){
+        display: flex;
+        width: 457px;
+        margin: 0;
+        padding: 0;
+        margin-top: 11px;
+        margin-right: 85px;
+       
+    }
+}
+
+#menu:checked ~ .menu-desplegable{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 224px;
+    background-color: $fondo-menu;
+    font-family: $texto-menu;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    padding-left: 16px;
+    justify-content: space-around;
+    padding-right: 0;
+    padding-bottom: 12px;
+    @media (min-width:768px){
+        display: none;      
+    }
+    
+}
+
+a{
+    color: $fondo;
+    text-decoration: none;
+    @media (min-width:768px){
+        color: $color-texto-titulos;
+        font-family: $texto-menu;
+        display: flex;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+
+@media (min-width:768px){
+    nav ul li {
+        margin: 15px;
+        list-style-type: none;
+        text-align: left;
+        a{
+            display: flex;
+        }
+        a:hover{
+            color: $color-botones;
+            font-size: 16px;
+            text-decoration: line-through;
+        }
+        a:active{
+            color: rgba(6,10,36,0.56);
+            font-size: 16px;
+        }
+    }
+
+  
+}

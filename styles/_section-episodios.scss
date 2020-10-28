@@ -1,0 +1,93 @@
+//Sección Episodios
+
+#episodios {
+    width: 100%;
+    height: 1203.5px;
+    position: relative;
+    margin-top: 24px;
+
+    @media (min-width:768px) {
+        width: 100%;
+        height: 1042.6px;
+    }
+
+
+
+}
+
+
+#fondo-diagonal {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    position: relative;
+    transform: skew(0deg, -6deg);
+    top: 24px;
+
+    @media (min-width:768px) {
+        top: 51px;
+        width: 100%;
+        height: 88%;
+    }
+
+
+
+}
+
+
+
+h2 {
+    font-family: $texto-titulos;
+    font-size: $size-titulos;
+    font-weight: 100;
+    margin-left: 16px;
+}
+
+#titulo-episodios {
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 16px;
+    color: $fondo;
+    position: absolute;
+    z-index: 1;
+    top: 64px;
+    padding-top: 0;
+
+    @media (min-width:768px) {
+        width: 209px;
+        height: 62px;
+        font-size: 48px;
+        margin-left: 200px;
+        top: -24px;
+        margin-top: 186px;
+        margin-bottom: 26px;
+    }
+
+
+
+
+}
+
+
+.frames {
+    position: absolute;
+    top: 127px;
+    margin-left: 11px;
+    margin-right: 11px;
+
+    @media(min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 1240px;
+        top: -24px;
+        margin-top: 274px;
+        margin-bottom: 64px;
+        width: 100%;
+        height: 536px;
+        margin-left: 0;
+
+
+    }
+}

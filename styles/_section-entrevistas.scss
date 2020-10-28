@@ -1,0 +1,45 @@
+//Invitados 
+
+
+#entrevistas {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo-invitados {
+    margin-top: 0;
+    margin-bottom: 14px;
+    margin-right: 16px;
+
+    @media (min-width:768px) {
+        font-size: 48px;
+        margin-bottom: 36px;
+        margin-left: 13.9%;
+    }
+}
+
+
+//Fotos
+
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width:768px) {
+        width: 480px;
+        height: 364px;
+        width: 100%;
+    }
+
+}
+
+.contenedor-fotos {
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+
+    }
+
+}
